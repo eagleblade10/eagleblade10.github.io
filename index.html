@@ -1,66 +1,113 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Engineering Portfolio</title>
+  <title>Benjamin Lho | Engineering Portfolio</title>
   <link rel="stylesheet" href="css/styles.css" />
-  <script src="js/script.js" defer></script>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Playfair+Display&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <nav id="main-nav">
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-<header id="hero">
-  <div class="hero-content">
-    <h1>Benjamin Lho</h1>
-    <p>Bridging precision engineering with thoughtful design.</p>
-  </div>
-</header>
+  <header id="hero">
+    <div class="hero-content">
+      <h1>Benjamin Lho</h1>
+      <p class="tagline">Mechanical Engineering<br>University of Texas at Austin</p>
+      <p class="smallertagline"> Expected Graduation: May 2027</p>
+    </div>
+  </header>
 
-  <section id="about">
+  <section id="about" class="fade-in">
+    <div style="text-align:center">
+      <img src="images/headshot.jpg" alt="Benjamin Lho Headshot" class="profile-pic">
+    </div>
     <h2>About Me</h2>
-    <p>I’m an engineer with a passion for creating intuitive, efficient solutions. My work spans software, mechanical systems, and user-centered design.</p>
+    <p> Rising junior Mechanical Engineering student at UT Austin seeking Summer 2026 opportunities in product design, FEA, and simulation/modeling.</p>
+    <p>I’m an engineer passionate about intuitive, efficient solutions. My work spans software development, mechanical systems, and user-centered design — driven by analytical thinking and creativity.</p>
   </section>
 
-  <section id="projects">
+  <section id="projects" class="fade-in">
     <h2>Projects</h2>
     <div class="project-card">
-      <img src="assets/project1.png" alt="Project Screenshot">
+      <img src="https://via.placeholder.com/800x400?text=Autonomous+Rover" alt="Autonomous Rover">
       <h3>Autonomous Rover</h3>
-      <p>Designed and built a rover with GPS-guided navigation and live telemetry.</p>
+      <p>I designed and built a GPS-guided rover with live telemetry and remote control with a homemade vaccuum meant for detecting, tracking, and sorting plastics from beaches.</p>
+      <p><strong>Tools:</strong> Arduino, Python, CAD, RF modules, OpenMV, MATLAB (Convex Hull Algorithms)</p>
+      <a href="https://github.com/yourproject" target="_blank">View on GitHub</a>
+    </div>
+    <div class="project-card">
+      <video controls width="100%" poster="images/project1-thumbnail.png">
+        <source src="images/bubbler.mp4" type="video/mp4">
+      </video>
+      <h3>Microbubbler</h3>
+      <p>I designed and improved an apparatus with three inlets — one for pressurized water and two for pressurized air. Using a specifically engineered geometry, slightly charged microbubbles preferentially attached to microplastics. As a result, sand sank while microplastics floated for effective separation.</p>
+      <p><strong>Tools:</strong> SolidWorks, Fluid Simulation</p>
+    </div>
+    <div class="project-card">
+      <h3>Chatbot</h3>
+      <p>I coded a chatbot assistant whose language model is centered on Google's GenAI that has the ability to create Zoom Meetings, schedule calendar events, view upcoming homeowrk assignments and email other people about those events.  It can connect with different accounts including: <br><br>Slack, Telegram, Zoom, Google Suite, Discord, Canvas <br><br>Using those thrid-party API tokens as well as FastAPI and Render, I was able to host my Assistant Chatbot on a live server. </p>
+      <p><strong>Tools:</strong> Python, FastAPI, Javascript, HTML </p>
+      <a href="https://github.com/eagleblade10/Chatbot" target="_blank">View on GitHub</a> <br><br>
+      <a href="https://chatbot-ubsj.onrender.com/" target="_blank">View Live Server</a> <br><br>(it takes a minute or two to load)
     </div>
   </section>
 
-  <section id="skills">
+  <section id="skills" class="fade-in">
     <h2>Skills</h2>
+    <h3>Software</h3>
+    <ul class="skills">
+      <li>SolidWorks</li>
+      <li>Fusion 360</li>
+      <li>MATLAB</li>
+      <li>Docker</li>
+    </ul>
+    <h3>Programming</h3>
     <ul class="skills">
       <li>Python</li>
-      <li>SolidWorks</li>
       <li>MATLAB</li>
-      <li>Embedded C</li>
-      <li>Fusion 360</li>
+      <li>Javascript</li>
+      <li>HTML</li>
+      <li>Python</li>
+    </ul>
+    <h3>Systems</h3>
+    <ul class="skills">
+      <li>Finite Element Analysis</li>
+      <li>Thermal Modeling</li>
+      <li>Product Design</li>
     </ul>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="fade-in">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
-    <p><a href="assets/resume.pdf" download>Download Résumé</a></p>
-    <p><a href="https://www.linkedin.com/in/benjamin-lho-b85569230/" target="_blank">LinkedIn</a></p>
+    <p>Email: <a href="mailto:benjaminlho10@gmail.com">benjaminlho10@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/benjamin-lho-b85569230/" target="_blank">Benjamin Lho</a></p>
+    <p><a class="resume-button" href="images/1 Page Resume Final.pdf" download>Download Résumé</a></p>
   </section>
 
   <footer>
     <p>&copy; 2025 Benjamin Lho</p>
   </footer>
-</body>
+  <script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  });
 
+  document.querySelectorAll('.fade-in').forEach(el => {
+    observer.observe(el);
+  });
+</script>
+</body>
 </html>
